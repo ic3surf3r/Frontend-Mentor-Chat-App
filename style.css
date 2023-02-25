@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /* gradients */
+  --light-magenta: hsl(293, 100%, 63%);
+  --light-violet: hsl(264, 100%, 61%);
+  /* text  */
+  --pale-violet: hsl(276, 100%, 81%);
+  --moderate-violet: hsl(276, 55%, 52%);
+  --desaturated-dark-violet: hsl(271, 15%, 43%);
+  --grayish-blue: hsl(206, 6%, 79%);
+  --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+  --dark-grayish-violet: hsl(270, 7%, 64%);
+  /* secondary  */
+  --light-greyish-violet: hsl(270, 20%, 96%);
+  --very-light-magenta: hsl(289, 100%, 72%);
+  --dark-purple: rgb(62, 36, 81);
+  --weird-background: rgb(249, 244, 249);
+  --almost-white: rgb(250, 250, 250);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.viewport {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Rubik", sans-serif;
+  background: var(--almost-white);
+  height: 100vh;
+  font-size: 16px;
+  width: 100%;
+}
+
+.left-side {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#purple-thing {
+  background: linear-gradient(
+    200deg,
+    var(--light-magenta),
+    var(--light-violet) 80%
+  );
+  position: absolute;
+  z-index: 5;
+  top: -154px;
+  /* left: -50px; */
+  right: clamp(200px, 80%, 1444px);
+  height: 834px;
+  margin-right: auto;
+  width: 518px;
+  border-bottom-left-radius: 100%50%;
+  border-bottom-right-radius: 100%50%;
+}
+
+.phone-container {
+  position: relative;
+  z-index: 20;
+  border: 10px solid #fff;
+  border-radius: 30px;
+  height: 544.4px;
+  width: 283.6px;
+  box-shadow: 10px 10px 70px -30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: var(--light-greyish-violet);
+}
+
+.notch {
+  position: absolute;
+  background: #fff;
+  height: 20px;
+  width: 140px;
+  justify-self: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  align-self: center;
+  z-index: 10;
+}
+
+.phone-header {
+  position: relative;
+  display: flex;
+  z-index: 5;
+  width: 263 px;
+  background: linear-gradient(
+    -80deg,
+    var(--light-magenta),
+    var(--light-violet)
+  );
+  color: var(--light-greyish-violet);
+  height: 70px;
+  border-top: 1px solid #fff;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  justify-content: start;
+  align-items: center;
+  padding-top: 20px;
+  margin-bottom: 5px;
+  box-shadow: 0 5px 10px -10px gray;
+}
+
+.phone-header .icon {
+  margin-left: 15px;
+}
+
+.phone-header .contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-header .availability {
+  font-weight: 200;
+  font-size: 9px;
+  color: var(--grayish-blue);
+}
+
+.phone-header .avatar {
+  margin: 7px;
+}
+
+.phone-header .avatar img {
+  border-radius: 50%;
+  border: 2px solid var(--light-greyish-violet);
+  width: 30px;
+}
+
+.phone-header .name {
+  font-size: 14px;
+}
+
+.phone-header .icon2 {
+  margin-right: 15px;
+  margin-left: auto;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.texts .text {
+  background: rgb(242, 226, 251);
+  color: var(--moderate-violet);
+  align-self: flex-start;
+  font-size: 9px;
+  max-width: 60%;
+  padding: 10px;
+  margin: 5px 10px;
+  border-radius: 8px;
+  border-bottom-left-radius: 2px;
+  box-shadow: 3px 3px 150px rgb(0 0 0 / 0.2);
+}
+
+.texts .text2 {
+  background: #fff;
+  color: var(--dark-grayish-violet);
+  align-self: flex-end;
+  font-size: 9px;
+  max-width: 60%;
+  padding: 10px;
+  margin: 5px 10px;
+  box-shadow: 3px 3px 90px rgb(0 0 0 / 0.2);
+
+  border-radius: 8px;
+  border-bottom-right-radius: 2px;
+}
+
+.pictures {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pictures img {
+  width: 45px;
+  border-radius: 25%;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.texts .text3 {
+  background: linear-gradient(
+    -80deg,
+    var(--light-violet),
+    var(--light-magenta)
+  );
+  display: flex;
+  justify-content: flex-start;
+  color: #fff;
+  align-self: flex-start;
+  align-items: center;
+  font-size: 9px;
+  width: 70%;
+  padding: 6px;
+  margin: 5px 10px;
+  border-radius: 8px;
+  border-bottom-left-radius: 2px;
+  box-shadow: 3px 3px 90px rgb(0 0 0 / 0.2);
+}
+
+.text3 .icon {
+  color: var(--very-light-magenta);
+  margin: 5px;
+}
+
+.texts .text3 .bigText {
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.text-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 10px 8px;
+  background: #fff;
+  border-radius: 15px;
+  font-size: 9px;
+  color: grey;
+}
+
+.text-bar .bar {
+  padding: 10px;
+}
+
+.text-bar .button {
+  background: var(--dark-purple);
+  border-radius: 50%;
+  border: 5px solid var(--dark-purple);
+  padding: 0 0.5px;
+  color: white;
+  margin: 0 5px 0 auto;
+}
+
+.right-side {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#light-purple-thing {
+  position: absolute;
+  background: var(--weird-background);
+
+  overflow: hidden;
+
+  z-index: 5;
+  bottom: -154px;
+  /* left: -50px; */
+  right: -5%;
+  height: 834px;
+  margin-left: auto;
+  width: 518px;
+  border-top-left-radius: 100%50%;
+  border-top-right-radius: 100%50%;
+}
+
+.right-side .content {
+  color: var(--dark-purple);
+  font-weight: 300;
+  line-height: 1.6;
+  position: relative;
+  z-index: 10;
+  max-width: 500px;
+  /* margin-right: auto; */
+  padding-right: 30px;
+  margin: 30px auto 30px 30px;
+}
+
+.right-side .content h1 {
+  font-weight: 500;
+  line-height: 2.5;
+}
+
+.right-side .content .desc {
+  color: var(--dark-grayish-violet);
+}
+
+@media (max-width: 640px) {
+  .viewport {
+    flex-direction: column;
+  }
+  .left-side {
+    width: 100%;
+  }
+
+  #purple-thing {
+    right: 55%;
+  }
+  .right-side {
+    width: 100%;
+  }
+  #light-purple-thing {
+    left: 55%;
+  }
+}
